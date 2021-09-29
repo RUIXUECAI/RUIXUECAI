@@ -1,0 +1,242 @@
+*{
+  box-sizing: border-box;
+}
+
+	body{
+    background-color:rgba(0, 0, 0, 1);
+	}
+  html{
+  cursor: url(rocket-.ico), auto;
+}
+  canvas{
+  position:fixed;
+  z-index: -10;
+  top:0;
+  left:0;
+  }
+
+  . line {
+    border-bottom: 1px solid rgb(161, 161, 161);
+    width: 100vw;
+    position: fixed;
+    top:10%;
+    left:0;
+    margin-left:0;
+    z-index: 100;
+  }
+
+  .top-container1{
+      position:absolute;
+      background-color:;
+      height:10%;
+      width:15%;
+      left:20%;
+      color:rgb(184, 184, 184);
+      font-size: 25px;
+    font-family: 'monoton';
+    z-index: 99;
+    transition: all .4s ease-in-out;
+  }
+  .top-container1:hover{
+    cursor: url(rocket-.ico),50 50, auto;
+      transform:scale(1.1);
+  }
+  .top-container2{
+    position:absolute;
+    background-color:;
+    height:10%;
+    width:15%;
+    left:50%;
+      color:rgb(184, 184, 184);
+      font-size: 25px;
+    font-family: 'monoton';
+    z-index: 99;
+      transition: all .4s ease-in-out;
+  }
+  .top-container2:hover{
+    cursor: url(rocket-.ico),50 50, auto;
+      transform:scale(1.1);
+  }
+  .top-container3{
+    position:absolute;
+    background-color:;
+    height:10%;
+    width:15%;
+    left:80%;
+      color:rgb(184, 184, 184);
+      font-size: 25px;
+    font-family: 'monoton';
+    z-index: 99;
+      transition: all .4s ease-in-out;
+  }
+  .top-container3:hover{
+    cursor: url(rocket-.ico),50 50, auto;
+      transform:scale(1.1);
+  }
+  .words{
+      display:flex;
+      flex-direction: row;
+      justify-content:center;
+      background-color:;
+      height:40%;
+      width:38%;
+      top:33vh;
+      left:50vw;
+      color:rgba(193, 193, 193, 0.55);
+      text-shadow: 0 0 15px rgba(255, 255, 255, 0.56);
+      font-size: 24px;
+    font-family: 'Anton';
+    z-index: 99;
+position: relative;
+  }
+  .row-item {
+  border-width: 3px;
+  border-color: rgb(255, 255, 255);
+  color:rgb(145, 145, 145);
+}
+.row-item:hover{
+  color:rgb(91, 181, 129);
+  text-shadow: 20px 20px 30px rgb(255, 255, 255);
+  transform:scale(1.1);
+  cursor: url(rocket-.ico), auto;
+}
+.screen{
+  position:fixed;
+  margin:0;
+  padding:0;
+  z-index: 1;
+width:1000vw;
+height:760vh;
+top: 18.9%;
+left: 32%;
+}
+.img{
+    position:fixed;
+    margin:0;
+    padding:0;
+  width:54%;
+  height:26%;
+  top: 24.3vh;
+  left: 41.5vw;
+  background:url(N-background.jpg);
+  animation:animate .5s linear infinite;
+  z-index: 2;
+}
+@keyframes animate
+{
+  0%
+  {
+  background-position:40% 40%;
+  }
+  100%
+  {
+  background-position: 80% 80%;
+  }
+}
+.name{
+  position:fixed;
+  width:180vw;
+  height:180vh;
+  top: -65%;
+  left: -75%;
+  font-size: 230px;
+  font-family: 'Anton';
+  color:rgba(196, 0, 255, 0.56);
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  z-index:-5;
+  text-shadow: 0 0 15px rgba(196, 0, 255, 0.56);
+}
+.name2{
+  position:fixed;
+  width:180vw;
+  height:180vh;
+  top: -33%;
+  left: -41%;
+  font-size: 230px;
+  font-family: 'Anton';
+  color:rgba(196, 0, 255, 0.56);
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  z-index: 3;
+  text-shadow: 0 0 15px rgba(196, 0, 255, 0.56);
+}
+.name3{
+  position:fixed;
+  width:180vw;
+  height:180vh;
+  top: -5%;
+  left: -8%;
+  font-size: 230px;
+  font-family: 'Anton';
+  color:rgba(196, 0, 255, 0.56);
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  z-index: 3;
+  text-shadow: 0 0 15px rgba(196, 0, 255, 0.56);
+}
+.ground{
+  position:fixed;
+  width:100vw;
+  height:50vh;
+  transform: rotateX(35deg);
+  top:65%;
+  left:0%;
+  background:url(moon.png);
+  background-size: cover;
+  z-index: 2;
+}
+.smoke{
+  position:fixed;
+  z-index: 4;
+  top:0;
+  left:0;
+  bottom:3vh;
+}
+.spaceman{
+  position:fixed;
+  top:15%;
+  Left:0%;
+    z-index: -4;
+    animation: spin 6s infinite;
+}
+
+.spaceman2{
+  position:fixed;
+  top:65%;
+  left:65%;
+    z-index: -5;
+        animation: spin2 13s infinite;
+}
+@keyframes spin{
+  0% {transform:translateY(-10px);}
+  50%{
+    transform:translateY(80px);}
+    100%{
+      transform:translateY(-10px);}
+}
+@keyframes spin2{
+  20% {transform:translateY(-20px);}
+  60%{
+    transform:translateY(40px);}
+    90%{
+      transform:translateY(-20px);}
+}
+.spaceman4{
+  position:fixed;
+  top:50%;
+  left:60%;
+    z-index: -7;
+}
+.spaceman5{
+  position:fixed;
+  top:60%;
+  left:80%;
+    z-index: -8;
+}
+a:link{
+  color:inherit;
+   text-decoration:none;}
